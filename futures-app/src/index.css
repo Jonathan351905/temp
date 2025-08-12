@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --background-start: #000F33;
+  --background-end: #070707;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Inter Tight", sans-serif;
+  background: linear-gradient(180deg, var(--background-start) 18.59%, var(--background-end) 100%);
+  color: #fff;
+}
+
+/******************** Utility classes to match figma spacing ********************/
+.container-1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18.2674px;
+  box-shadow: 0 0 0 rgba(0,0,0,0.25);
+}
+
+.card-glass-bordered {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.14171px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18.2674px;
+}
+
+.badge-pro {
+  background: linear-gradient(180deg, rgba(2, 73, 254, 0.3) 0%, rgba(128, 164, 254, 0.3) 100%);
+  border-radius: 1140.57px;
+}
+
+.badge-outline-blue {
+  background: #11285F;
+  border: 1.58418px solid #80A4FE;
+  border-radius: 1582.59px;
+  color: #80A4FE;
+  text-shadow: 0 0 15.8418px rgba(171, 194, 255, 0.5);
+}
+
+.badge-outline-green {
+  background: #053321;
+  border: 1.36941px solid #75DFA7;
+  border-radius: 1368.04px;
+  color: #75DFA7;
+  text-shadow: 0 0 13.6941px rgba(171, 194, 255, 0.7);
+}
+
+.btn-white {
+  background: #FFFFFF;
+  color: #070707;
+  border-radius: 11.4171px;
+}
+
+.separator-row {
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1.14171px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1.14171px solid rgba(255, 255, 255, 0.05);
+}
+
+.blur-ellipse {
+  position: absolute;
+  width: 391.61px;
+  height: 295.7px;
+  left: calc(50% - 391.61px/2 - 196.19px);
+  top: -251.94px;
+  background: #1456FE;
+  filter: blur(188.382px);
+  z-index: 0;
+}
